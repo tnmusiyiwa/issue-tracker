@@ -1,0 +1,18 @@
+meta {
+  name: create_issue
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3000/api/issues
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "title": "Issue 1",
+    "description": "Issue 1 description"
+  }
+}
